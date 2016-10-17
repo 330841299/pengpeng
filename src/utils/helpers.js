@@ -12,7 +12,7 @@ function getWorkCard(){
 }
 
 function getBlogCard(){
-  let address = `https://raw.githubusercontent.com/forevertyler/BlogDemo/master/BlogCard.json?${Math.random()}`
+  let address = `https://raw.githubusercontent.com/330841299/DemoData/master/BlogCard.json?${Math.random()}`
   return axios.get(address)
     .then((res) => (
       { getData:res.data }
@@ -23,7 +23,7 @@ function getBlogCard(){
 }
 
 function getBlogMd(add){
-  let address = `https://raw.githubusercontent.com/forevertyler/BlogDemo/master/Blog/${add}.md`
+  let address = `https://raw.githubusercontent.com/330841299/DemoData/master/Blog/${add}.md`
   return axios.get(address)
     .then((res) => (
       { getData:res.data }
@@ -34,7 +34,7 @@ function getBlogMd(add){
 }
 
 function getWorkMd(add){
-  let address = `https://raw.githubusercontent.com/forevertyler/BlogDemo/master/Work/${add}.md`
+  let address = `https://raw.githubusercontent.com/330841299/DemoData/master/Work/${add}.md`
   return axios.get(address)
     .then((res) => (
       { getData:res.data }

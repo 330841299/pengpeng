@@ -8,7 +8,7 @@ module.exports = {
   ],
   output: {
     path: path.join(__dirname, 'dist'),
-    start: 'bundle.js',
+    filename: 'bundle.js',
     publicPath: './dist/'
   },
   plugins: [
